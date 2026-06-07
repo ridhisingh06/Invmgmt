@@ -102,7 +102,7 @@
 
 ---
 
-## 🗂️ Modified Files Map
+## Modified Files Map
 
 ### Services (4 files) - Error Handling Added
 
@@ -130,7 +130,7 @@
 
 ### Components (4 files) - Memory Leaks Fixed & Error Display Added
 
-#### 1. `src/app/my-requests/my-requests.ts` ⭐ CRITICAL
+#### 1. `src/app/my-requests/my-requests.ts` CRITICAL
 **Issues Fixed**: 3 (Memory leak, no error display, no OnDestroy)  
 **Changes**: Added OnDestroy, destroy$, takeUntil, errorMsg display  
 **Reference**: See ASYNC_ERROR_HANDLING_FIX.md → "MyRequestsComponent"
