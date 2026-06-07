@@ -1,0 +1,9 @@
+/* Basic styles for the AppComponent */
+.app-container {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+  min-height: 100vh;
+}

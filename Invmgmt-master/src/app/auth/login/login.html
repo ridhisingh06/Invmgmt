@@ -1,0 +1,41 @@
+<section class="login-shell">
+  <div class="login-panel bento-card">
+    <div class="login-copy">
+
+      <h1 class="animate-in">Online Stationary Management System</h1>
+
+    </div>
+
+    <form class="login-card" (ngSubmit)="login()">
+      <div class="card-header">
+        <h2 class="text-gradient">Access Granted?</h2>
+
+      </div>
+
+      <label class="field">
+        <span>Enter Your Email</span>
+        <input [(ngModel)]="email" name="email" type="email" autocomplete="email" placeholder="user@stationary.io" [disabled]="isLoading">
+      </label>
+
+      <label class="field">
+        <span>Enter Your Password </span>
+        <input [(ngModel)]="password" name="password" type="password" autocomplete="current-password"
+          placeholder="••••••••" [disabled]="isLoading">
+      </label>
+
+      <p class="success" *ngIf="successMsg">{{ successMsg }}</p>
+      <p class="error" *ngIf="errorMsg">{{ errorMsg }}</p>
+
+      <button class="btn-neon login-btn" type="submit" [disabled]="isLoading">
+        <span *ngIf="!isLoading">Sign In</span>
+        <span *ngIf="isLoading && !isRetrying">Signing In...</span>
+        <span *ngIf="isRetrying">Retrying Connection...</span>
+      </button>
+
+      <p class="register-link">
+        New Here?
+        <a routerLink="/register">Register Here</a>
+      </p>
+    </form>
+  </div>
+</section>
